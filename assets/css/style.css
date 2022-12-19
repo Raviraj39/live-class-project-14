@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -63,7 +64,7 @@ a {
   justify-content: center;
   position: relative;
   margin-top: 80px;
-  margin-left: 300px;
+  margin-left: 400px;
 }
 .heading-1 {
   color: #f5f2f0;
@@ -86,8 +87,24 @@ a {
   margin-top: -40px;
   margin-left: 100px;
 }
-
-
+.para-main {
+  margin-left: 30px;
+  margin-top: 40px;
+  position: relative;
+}
+.para-main > p {
+  font-size: 1.5em;
+  color: #888;
+  margin-bottom: 30px;
+}
+.para-main > button {
+  min-width: 300px;
+  padding: 20px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  position: relative;
+}
 
 .social-links {
   display: flex;
@@ -95,7 +112,7 @@ a {
   align-items: flex-end;
   position: relative;
   gap: 5px;
-  margin-top: -280px;
+  margin-top: -300px;
   margin-right: 60px;
   flex-wrap: wrap;
 }
@@ -105,20 +122,90 @@ a {
   justify-content: right;
 }
 .social-links > a > img {
-  width:20px;
+  width: 20px;
+}
+
+.last-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-left: 300px;
+}
+.last-container .hobbies .comma-container .arrow {
+  flex: 1;
 }
 .hobbies {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
+  margin-left: 60px;
 }
+.hobbies > ul {
+  color: #888;
+  list-style: none;
+}
+.hobbies > ul > li {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: -20px;
+  color: #fff;
+}
+.last-container .hobbies ul li::before {
+  /* bullets */
+  content: "\2022";
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}
+
+.last-container .hobbies ul li a::before {
+  /* lines */
+  content: "";
+  position: absolute;
+  left: 59px;
+  top: 47px;
+  border-left: 2px solid #000;
+  height: 53px;
+  width: 300px;
+}
+.hobbies ul li a {
+  color: #888;
+}
+.hobbies ul li a:first-child {  
+  color: #000;
+}
+
 .comma-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
+  margin-left: 100px;
 }
+.comma-container > img {
+  height: 230px;
+}
+.comma-container > h1 {
+  font-size: 5em;
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  margin-bottom: -40px;
+}
+.comma-container > p {
+  margin-bottom: 30px;
+}
+
 .arrow {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: -100px;
+  height: 100px;
 }
